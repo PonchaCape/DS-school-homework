@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AIcrowd | Insurance pricing game | Challenges</title>
+    <meta name="description" content="Play in a realistic insurance market, compete for profit!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="AIcrowd | Insurance pricing game | Challenges" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.aicrowd.com/challenges/insurance-pricing-game" />
+    <meta property="og:image" content="https://d3000t1r8yrm6n.cloudfront.net/raw_images/challenges/social_media_image_file/541/464647b8eefd984c2a1b.jpg" />
+    <meta property="og:description" content="Play in a realistic insurance market, compete for profit!" />
+    <meta property="og:site_name" content="AIcrowd | Insurance pricing game | Challenges" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@aicrowdHQ">
+    <meta name="twitter:title" content="AIcrowd | Insurance pricing game | Challenges">
+    <meta name="twitter:description" content="Play in a realistic insurance market, compete for profit!">
+    <meta name="twitter:creator" content="@aicrowdHQ">
+    <meta name="twitter:image" content="https://d3000t1r8yrm6n.cloudfront.net/raw_images/challenges/social_media_image_file/541/464647b8eefd984c2a1b.jpg">
+
+
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-57x57-5f11dd362820389c669093ea0070a5a8f98e1128c84ab5c9316768989c488d9e.png" sizes="57x57" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-60x60-a3ba860c24da457ef8f16d9d7e40814c6835bfef7268781eb17dfa1c03be83ed.png" sizes="60x60" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-72x72-fa968c8656c46df290ed1ae5dd4bb65c429b015a661330a3623b096c6e4d253e.png" sizes="72x72" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-76x76-5760f720632f080ba32a6afa52c2e48600d0fbb270f3a56d66947b6500cca3ba.png" sizes="76x76" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-114x114-ffef2a7294e6e9c95b42e0e97c52103e350dd25a76094d73a107dacbb5580249.png" sizes="114x114" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-120x120-aaddb625e759aeeaa326652d0e6ae80250ce6cc76e86cd14825af710cf7ff90f.png" sizes="120x120" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-144x144-28f2bdfee1a11984ba0dd2da8e2fcd52fc6cd6350ccafb5512fa521f40f4de8b.png" sizes="144x144" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-152x152-c42809322fa9f13067d094364700ca5b8ce238063dfc6d9d37609ba9428725c7.png" sizes="152x152" />
+    <link rel="shortcut icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-180x180-6dcbd672f0ef87c1cd1b470dc1417ca1cac6c16e1443fbde7e03250f6deebada.png" sizes="192x192" />
+    <link rel="shortcut icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/favicon-32x32-31fa8e51ed4c803d20eab56262d765c013deaefab71bdcdeaae2b83fb4461a9b.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/favicon-96x96-7159cc97f7b1ef5b332d1384cf0fbf500c11886ed7bd743daab632d1aae80d79.png" sizes="96x96" />
+    <link rel="shortcut icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/favicon-16x16-1526730d30e191cb84bd66a08d29d01165d2074733a361550afecc5edd2fd22e.png" sizes="16x16" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-57x57-5f11dd362820389c669093ea0070a5a8f98e1128c84ab5c9316768989c488d9e.png" sizes="57x57" />
+    <link rel="apple-touch-icon" type="image/png" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/apple-icon-57x57-5f11dd362820389c669093ea0070a5a8f98e1128c84ab5c9316768989c488d9e.png" sizes="57x57" />
+    <link rel="manifest" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/manifest-e95672d4553092f574d19ee4bf1d17197b734d61b67a30e5463c91fd875095d4.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://d3qvx1ggyg4lu1.cloudfront.net/assets/favicon/ms-icon-144x144-28f2bdfee1a11984ba0dd2da8e2fcd52fc6cd6350ccafb5512fa521f40f4de8b.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400,400i,500,500i,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/bee91422da.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap-reboot.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script async charset="utf-8" src="//cdn.embedly.com/widgets/platform.js"></script>
+    <script src="//cdn.ckeditor.com/4.14.0/standard-all/ckeditor.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132885496-1"></script>
+
+      <script>
+var _rollbarConfig = {
+    accessToken: "1f29e90edc5f4a6e9ceb9947c5186040",
+    captureUncaught: true,
+    captureUnhandledRejections: true,
+    payload: {
+        environment: "production"
+    }
+};
+// Rollbar Snippet
+!function(r){function o(e){if(n[e])return n[e].exports;var t=n[e]={exports:{},id:e,loaded:!1};return r[e].call(t.exports,t,t.exports,o),t.loaded=!0,t.exports}var n={};return o.m=r,o.c=n,o.p="",o(0)}([function(r,o,n){"use strict";var e=n(1),t=n(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.0.1/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=e.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=e.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,o,n){"use strict";function e(r){return function(){try{return r.apply(this,arguments)}catch(o){try{console.error("[Rollbar]: Internal error",o)}catch(n){}}}}function t(r,o){this.options=r,this._rollbarOldOnError=null;var n=s++;this.shimId=function(){return n},window&&window._rollbarShims&&(window._rollbarShims[n]={handler:o,messages:[]})}function a(r,o){var n=o.globalAlias||"Rollbar";if("object"==typeof r[n])return r[n];r._rollbarShims={},r._rollbarWrappedError=null;var t=new p(o);return e(function(){return o.captureUncaught&&(t._rollbarOldOnError=r.onerror,i.captureUncaughtExceptions(r,t),i.wrapGlobals(r,t)),o.captureUnhandledRejections&&i.captureUnhandledRejections(r,t),r[n]=t,t})()}function l(r){return e(function(){var o=this,n=Array.prototype.slice.call(arguments,0),e={shim:o,method:r,args:n,ts:new Date};window._rollbarShims[this.shimId()].messages.push(e)})}var i=n(2),s=0,c=n(3),d=function(r,o){return new t(r,o)},p=c.bind(null,d);t.prototype.loadFull=function(r,o,n,t,a){var l=function(){var o;if(void 0===r._rollbarDidLoad){o=new Error("rollbar.js did not load");for(var n,e,t,l,i=0;n=r._rollbarShims[i++];)for(n=n.messages||[];e=n.shift();)for(t=e.args||[],i=0;i<t.length;++i)if(l=t[i],"function"==typeof l){l(o);break}}"function"==typeof a&&a(o)},i=!1,s=o.createElement("script"),c=o.getElementsByTagName("script")[0],d=c.parentNode;s.crossOrigin="",s.src=t.rollbarJsUrl,n||(s.async=!0),s.onload=s.onreadystatechange=e(function(){if(!(i||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{d.removeChild(s)}catch(r){}i=!0,l()}}),d.insertBefore(s,c)},t.prototype.wrap=function(r,o){try{var n;if(n="function"==typeof o?o:function(){return o||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._wrapped){r._wrapped=function(){try{return r.apply(this,arguments)}catch(o){var e=o;throw"string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e,e}},r._wrapped._isWrap=!0;for(var e in r)r.hasOwnProperty(e)&&(r._wrapped[e]=r[e])}return r._wrapped}catch(t){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection".split(","),f=0;f<u.length;++f)t.prototype[u[f]]=l(u[f]);r.exports={setupShim:a,Rollbar:p}},function(r,o){"use strict";function n(r,o){if(r){var n;"function"==typeof o._rollbarOldOnError?n=o._rollbarOldOnError:r.onerror&&!r.onerror.belongsToRollbar&&(n=r.onerror,o._rollbarOldOnError=n);var t=function(){var t=Array.prototype.slice.call(arguments,0);e(r,o,n,t)};t.belongsToRollbar=!0,r.onerror=t}}function e(r,o,n,e){r._rollbarWrappedError&&(e[4]||(e[4]=r._rollbarWrappedError),e[5]||(e[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null),o.handleUncaughtException.apply(o,e),n&&n.apply(r,e)}function t(r,o){if(r){"function"==typeof r._rollbarURH&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var n=r.reason,e=r.promise,t=r.detail;!n&&t&&(n=t.reason,e=t.promise),o&&o.handleUnhandledRejection&&o.handleUnhandledRejection(n,e)};r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}function a(r,o){if(r){var n,e,t="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<t.length;++n)e=t[n],r[e]&&r[e].prototype&&l(o,r[e].prototype)}}function l(r,o){if(o.hasOwnProperty&&o.hasOwnProperty("addEventListener")){var n=o.addEventListener;n._rollbarOldAdd&&(n=n._rollbarOldAdd);var e=function(o,e,t){n.call(this,o,r.wrap(e),t)};e._rollbarOldAdd=n,o.addEventListener=e;var t=o.removeEventListener;t._rollbarOldRemove&&(t=t._rollbarOldRemove);var a=function(r,o,n){t.call(this,r,o&&o._wrapped||o,n)};a._rollbarOldRemove=t,o.removeEventListener=a}}r.exports={captureUncaughtExceptions:n,captureUnhandledRejections:t,wrapGlobals:a}},function(r,o){"use strict";function n(r,o){this.impl=r(o,this),this.options=o,e(n.prototype)}function e(r){for(var o=function(r){return function(){var o=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,o)}},n="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId".split(","),e=0;e<n.length;e++)r[n[e]]=o(n[e])}n.prototype._swapAndProcessMessages=function(r,o){this.impl=r(this.options);for(var n,e,t;n=o.shift();)e=n.method,t=n.args,this[e]&&"function"==typeof this[e]&&this[e].apply(this,t);return this},r.exports=n},function(r,o){"use strict";r.exports=function(r){return function(o){if(!o&&!window._rollbarInitialized){r=r||{};for(var n,e,t=r.globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;n=window._rollbarShims[i++];)e||(e=n.handler),n.handler._swapAndProcessMessages(l,n.messages);window[t]=e,window._rollbarInitialized=!0}}}}]);
+// End Rollbar Snippet
+</script>
+
+    <link rel="stylesheet" media="all" href="https://d3qvx1ggyg4lu1.cloudfront.net/assets/application-redesign-675b24970780960c8ba11bd2b57550d75e1c6a19739b683e7355d0d40b9c5e82.css" data-turbolinks-track="true" />
+    <script src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/application-d45b49ac7c3aabd1e69714400466da02b4a5537291a8bfe946ea21f7b512a63c.js" data-turbolinks-track="true"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iSCSL5Jw+ijxmnLRkBmk+OM2cOJQRrAbiLb4HKrSMl8zSTezBb5nGCM0ao5/IQPO5nWmIqbTTXzlTBn2DaXtcw==" />
+    <script src="https://d3qvx1ggyg4lu1.cloudfront.net/packs/application-43ec406078f27ea488ab.js"></script>
+    <link rel="stylesheet" media="screen" href="https://d3qvx1ggyg4lu1.cloudfront.net/packs/application-0b81a254fb7cdaf2ed98.css" />
+  </head>
+
+  <body id='' data-turbolinks="false">
+    <!-- loader container -->
+<div id='loader-container' class="loader-container"
+  style="position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);"
+>
+
+  <!-- loader -->
+  <div class="loader" title="0">
+  <center>
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+      <path opacity="0.2" fill="#F0514D" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+      <path fill="#F0514D" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z">
+      <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"/>
+      </path>
+    </svg>
+  </center>
+    <span>Loading</span>
+  </div>
+  <!-- loader -->
+
+</div>
+<!-- /loader container -->
+
+
+
+      <!-- modal: feedback -->
+<div class="modal feedback-modal" id="feedbackModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog feedback-modal-dialog" role="document">
+    <div class="modal-content feedback-modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Send Feedback</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="form-rg feedback-form" data-controller="feedback-form" data-feedback-form-create-feedback-url="https://www.aicrowd.com/api/v1/feedbacks" data-action="submit-&gt;feedback-form#handleFormSubmit" action="#" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="L88vk6wvMc726kx/U6FvsrJxsISf31ehQ0t49+DuCsst1GBH2zerqmuFG5EwJpCP1dNC0UN2SKf7QoNHwuxZdg==" />
+        <div class="modal-body">
+          <div id="feedback-form-alert-wrapper"></div>
+
+          <p>👋  Hi, we are the team behind AIcrowd. We are building it for you, please share any feedback you may have.</p>
+          <textarea id="feedback-form-message" class="form-control feedback-message-textarea" name="message">
+</textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button name="button" type="submit" class="btn btn-primary">Send Feedback</button>
+        </div>
+</form>    </div>
+  </div>
+</div>
+<!-- /modal: feedback -->
+
+      <div data-toggle="modal" data-target="#feedbackModal" class="feedback-button">Feedback</div>
+
+    <div class='content'>
+      
+<!-- app header -->
+<header class="app-header">
+	<div class="container-fluid">
+
+		<div class="app-header-section">
+			<!-- app brand -->
+			<div class="app-brand">
+				<a class="logo-aicrowd" href="/" data-turbolinks="false">
+					<span>AIcrowd</span>
+				</a>
+      </div>
+
+      <form data-controller="search-form" data-action="submit-&gt;search-form#handleSubmit" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control search-input" placeholder="Search..." aria-label="Search" aria-describedby="Search" data-target="search-form.searchQuery" type="text" name="q" id="q" />
+</form>		</div>
+
+			<div class="app-header-section">
+
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link" href="/challenges">Challenges</a>
+					</li>
+					<!-- <li class="nav-item"> -->
+					<!-- </li> -->
+					<li class="nav-item">
+						<a class="nav-link" href="/blogs">Blog</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							<svg width="16" height="4" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2 0C.9 0 0 .9 0 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM8 0C6.9 0 6 .9 6 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#909293" fill-rule="nonzero"/>
+							</svg>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="/landing_page/host">Organize a challenge</a>
+							<a class="dropdown-item" href="/faq">FAQ</a>
+							<a class="dropdown-item" href="/our_team">Our Team</a>
+							<a class="dropdown-item" href="/jobs">Jobs</a>
+							<a class="dropdown-item" href="/contact">Contact</a>
+						</div>
+					</li>
+				</ul>
+
+				<div class="dropdown">
+					<button class="app-header-toggler" type="button" id="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="app-header-toggler-icon">
+              <svg width="16" height="4" xmlns="http://www.w3.org/2000/svg"><path d="M2 0C.9 0 0 .9 0 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM8 0C6.9 0 6 .9 6 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#5D5F60" fill-rule="nonzero"/></svg>
+            </span>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="/challenges">Challenges</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="/blogs">Blog</a>
+						<a class="dropdown-item" href="/landing_page/host">Organize a challenge</a>
+						<a class="dropdown-item" href="/faq">FAQ</a>
+						<a class="dropdown-item" href="/our_team">Our Team</a>
+						<a class="dropdown-item" href="/jobs">Jobs</a>
+						<a class="dropdown-item" href="/contact">Contact</a>
+					</div>
+				</div>
+				<!-- notifications -->
+<div class="app-header-notifications">
+  <div class="dropdown">
+    <a class="dropdown-toggle notification-bell-icon-active"
+       data-toggle="dropdown"
+       data-controller="notifications"
+       data-notifications-participant-id="20000"
+       data-notifications-notification-id="[6476035, 6469386, 6464227, 6344777, 6354024, 6353537, 6350536, 6350535, 6348824, 6347113, 6344781, 6344780, 6344778, 6336180, 6332674, 6255092, 6255091, 6253376, 6237917, 6107929, 6092434, 6092433, 6090722, 6090721, 6046133, 6046132, 5978836, 5788427, 4765913]"
+       data-action="click->notifications#readNotifications"
+       href="#"
+       role="button"
+       aria-haspopup="true"
+       aria-expanded="false"></a>
+    <div class="dropdown-menu dropdown-menu-notifications dropdown-menu-right">
+      <!-- notification -->
+          <a class="dropdown-item dropdown-item-active" href="/participants/alieksandr_kim/read_notification/6476035">
+            <div class="dropdown-item-img">
+              <img src="https://d3000t1r8yrm6n.cloudfront.net/images/challenges/image_file/541/AICrowd_GIF.gif" />
+            </div>
+            <div>
+              <span><strong>Leaderboard</strong> Congratulations! You made your first submission and secured 203rd place in the Insurance pricing game leaderboard.</span><br>
+              <span class="text-muted">23 minutes Ago</span>
+            </div>
+</a>          <div class="dropdown-divider"></div>
+          <a class="dropdown-item dropdown-item-active" href="/participants/alieksandr_kim/read_notification/6469386">
+            <div class="dropdown-item-img">
+              <img src="https://d3000t1r8yrm6n.cloudfront.net/images/challenges/image_file/541/AICrowd_GIF.gif" />
+            </div>
+            <div>
+              <span><strong>Submission</strong> Your Insurance pricing game Challenge submission #120794 has been graded with a score of 509.88833061494</span><br>
+              <span class="text-muted">2 hours Ago</span>
+            </div>
+</a>          <div class="dropdown-divider"></div>
+          <a class="dropdown-item dropdown-item-active" href="/participants/alieksandr_kim/read_notification/6464227">
+            <div class="dropdown-item-img">
+              <img src="https://d3000t1r8yrm6n.cloudfront.net/images/challenges/image_file/541/AICrowd_GIF.gif" />
+            </div>
+            <div>
+              <span><strong>Submission</strong> Your Insurance pricing game Challenge submission #120791 has been graded with a score of 509.88833061494</span><br>
+              <span class="text-muted">2 hours Ago</span>
+            </div>
+</a>          <div class="dropdown-divider"></div>
+          <a class="dropdown-item dropdown-item-active" href="/participants/alieksandr_kim/read_notification/6344777">
+            <div class="dropdown-item-img">
+              <img src="https://www.aicrowd.com/assets/img/discourse.png" />
+            </div>
+            <div>
+              <span><strong></strong> alfarzan Replied on Topic: Problem with saving tensorflow model</span><br>
+              <span class="text-muted">21 hours Ago</span>
+            </div>
+</a>          <div class="dropdown-divider"></div>
+          <a class="dropdown-item dropdown-item-active" href="/participants/alieksandr_kim/read_notification/6354024">
+            <div class="dropdown-item-img">
+              <img src="https://d3000t1r8yrm6n.cloudfront.net/images/challenges/image_file/541/AICrowd_GIF.gif" />
+            </div>
+            <div>
+              <span><strong>Submission</strong> Your Insurance pricing game Challenge submission #120666 has been graded with a score of 823.505482464369</span><br>
+              <span class="text-muted">22 hours Ago</span>
+            </div>
+</a>          <div class="dropdown-divider"></div>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/participants/alieksandr_kim/notifications_message">See all</a>
+      <!-- /notification -->
+    </div>
+  </div>
+</div>
+<!-- /notifications -->
+
+				<div class="member-options">
+					<div class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/20000/photo.jpg" /></a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="/participants/alieksandr_kim">
+								<strong>alieksandr_kim</strong><br>
+								View profile
+</a>							<a class="dropdown-item" href="/participants/edit">Account Settings</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" rel="nofollow" data-method="delete" href="/participants/sign_out">Log Out</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <span class="dropdown-item-no-click">
+                                                            Follow us on<br>
+                                                            <a href="https://fb.com/aicrowdHQ" target="_blank"><span class="border btn fa fa-facebook"></span></a>
+                                                            <a href="https://twitter.com/aicrowdHQ" target="_blank"><span class="border btn fa fa-twitter"></span></a>
+                                                            <a href="https://www.linkedin.com/company/aicrowd" target="_blank"><span class="border btn fa fa-linkedin"></span></a>
+                                                        </span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	</div>
+</header>
+
+
+      <div id="flash-messages-wrapper">
+        
+        
+      </div>
+
+      <!-- masthead - challenge -->
+  <!--- TODO: move this embeeded css outside -->
+  <style>
+  .masthead-banner {
+    background-image: url('https://d3000t1r8yrm6n.cloudfront.net/raw_images/challenges/banner_file/541/464647b8eefd984c2a1b.png');
+    background-color: #ffffff
+  }
+  @media (max-width: 768px) {
+    .masthead-banner {
+      background-image: url('');
+      background-size: 100% auto;
+    }
+    .mobile-mt-100 {
+      margin-top: 100px;
+    }
+    .mobile-mt-100 .organizer-attribution,
+    .mobile-mt-100 .dropdown {
+      display: none;
+    }
+  }
+  </style>
+  <div class="masthead masthead-challenge masthead-banner">
+  <div class="container-fluid">
+    <div class="row">
+  <div class="col-12">
+        <span class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="2021-03-07 23:59:00 UTC">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-time.svg" />
+          Market simulation competition : 23 days left
+        </span>
+      <a href="/challenges?categories=supervised-learning">
+        <span class='badge badge-outline'>#supervised_learning</span>
+</a>      <a href="/challenges?categories=educational">
+        <span class='badge badge-outline'>#educational</span>
+</a>      <a href="/challenges?categories=insurance">
+        <span class='badge badge-outline'>#insurance</span>
+</a>  </div>
+</div>
+
+
+    <div class="row" style="height: 200px"></div>
+
+    <!-- organizer/stats/options -->
+    <div class="row mobile-mt-100">
+  <div class="col-12 d-flex align-items-center flex-wrap">
+    <div class="organizer-attribution">
+        <span>By&nbsp;</span>
+        <a href="/organizers/imperial-cpg">
+          <img src="https://d3000t1r8yrm6n.cloudfront.net/images/organizers/image_file/162/cpg-white-on-black-logo-only.png" />
+</a>        <a href="/organizers/imperial-cpg">
+          <span>Imperial CPG&nbsp;</span>
+</a>    </div>
+
+    <div class="stats-group" style="margin-right: 0px">
+      <div class="stat-item" style="width: 72px">
+        <center>
+        <span data-toggle="tooltip" data-placement="top" title="No. of views">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-views.svg" />
+          47.5k
+        </span>
+        </center>
+      </div>
+      <div class="stat-item" style="width: 72px">
+        <center>
+        <span data-toggle="tooltip" data-placement="top" title="No. of users">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-users.svg" />
+          1639
+        </span>
+        </center>
+      </div>
+      <div class="stat-item width-72">
+  <center>
+    <span data-toggle="tooltip" data-placement="top" title="No. of teams">
+      <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-teams.svg" />
+      215
+    </span>
+  </center>
+</div>
+
+      <div class="stat-item" style="width: 72px">
+        <center>
+        <span data-toggle="tooltip" data-placement="top" title="No. of submissions">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-submissions.svg" />
+          7555
+        </span>
+        </center>
+      </div>
+    </div>
+    <div class="btn-set" aria-hidden="true">
+          <a id="vote-link-challenge-541" data-remote="true" rel="nofollow" data-method="post" href="/challenges/541/votes">
+      <button type='button' class='btn btn-secondary btn-sm'>
+        <svg width='12' height='11' xmlns='http://www.w3.org/2000/svg'><path d='M10.8746251 6.14539024L5.97691577 11.0430996 1.07920644 6.14539024C.43154568 5.50196808.03030318 4.61061457.03030318 3.62554576c0-1.96049121 1.58929212-3.54978364 3.54978364-3.54978364.92305599 0 1.76382467.35231416 2.39516959.92980603.63649437-.6044087 1.49691101-.97526512 2.44394586-.97526512 1.96049123 0 3.54978363 1.58929242 3.54978363 3.54978364 0 1.00819292-.4203017 1.91821904-1.0952455 2.56441886z' fill='#F0524D' fill-rule='evenodd'></svg>
+         74
+      </button>
+</a>
+          <a id="follow-link-challenge-541" class="btn btn-secondary btn-sm" data-remote="true" rel="nofollow" data-method="post" href="/challenges/541/follows?active_tab=false&amp;other_participant=alieksandr_kim">Follow</a>
+
+    </div>
+
+  </div>
+</div>
+
+    <!-- /organizer/stats/options -->
+  </div>
+</div>
+<!-- /masthead - challenge -->
+
+<!-- sub-nav bar -->
+<div class="sub-nav-bar sticky-top">
+  <div class="container-fluid priority-nav" data-controller="prioritynav">
+    <ul class="nav">
+      <li class="nav-item">
+  <a class="active nav-link" href="/challenges/insurance-pricing-game">Overview</a>
+</li>
+
+        <li class="nav-item">
+  <a class=" nav-link" href="/challenges/insurance-pricing-game/leaderboards">Leaderboard</a>
+</li>
+
+      <li class="nav-item">
+  <a class=" nav-link" href="/challenges/insurance-pricing-game/notebooks">Notebooks</a>
+</li>
+
+      <li class="nav-item">
+  <a class=" nav-link" href="/challenges/insurance-pricing-game/discussion">Discussion</a>
+</li>
+
+      <li class="nav-item">
+  <a class=" nav-link" href="/challenges/insurance-pricing-game/insights">Insights</a>
+</li>
+
+        <li class="nav-item">
+  <a class=" nav-link" href="/challenges/insurance-pricing-game/dataset_files">Resources</a>
+</li>
+
+        <li class="nav-item">
+  <a class=" nav-link" href="/challenges/insurance-pricing-game/submissions">Submissions</a>
+</li>
+
+      <li class="nav-item">
+  <a class=" nav-link" href="/challenges/insurance-pricing-game/challenge_rules">Rules</a>
+</li>
+
+
+     <li class="nav-item dropdown overflow-nav">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><polygon fill="#5D5F60" points="7 10 12 15 17 10" transform="translate(-7 -10)"/></svg>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right overflow-nav-list">
+        </div>
+    </li>
+    </ul>
+
+      <span class="pull-right mr-1" title="This challenge has team-freeze in effect" data-toggle="tooltip"><button disabled="disabled" class="btn btn-secondary disabled btn-sm">Create Team</button></span>
+          <a class="btn btn-primary btn-sm pull-right" href="/challenges/insurance-pricing-game/submissions/new">Create Submission</a>
+  </div>
+</div>
+<!-- /sub-nav bar -->
+
+<!-- create team modal -->
+<div class="modal fade" id="create-team-modal" tabindex="-1" role="dialog" aria-labelledby="create-team-modal-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form class="new_team" id="new_team" action="/challenges/insurance-pricing-game/teams" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="1GrGbdQZYyRnCl3+zPqzvQlg2mEwvTKlYK6tXgHjgMDq3yjhlLkbN78dBwAFdwQkzamHfzau5F79CP75+BXElg==" />
+        <div class="modal-header">
+          <h4 class="modal-title" id="create-team-modal-label">Create a team for this challenge</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Team Name</label>
+            <div class="input-group mb-3">
+              <input class="form-control validated-field" placeholder="Team name" data-auto-focus="true" data-error-description-selector="team-name-error-message" data-validation-type="regex" data-validation-regex-pattern="^[a-zA-Z0-9.\-_{}\[\]]+$" type="text" name="team[name]" id="team_name" />
+              <div id="team-name-error-message" style="display: none; color: red">
+                <small><i>A team name may only contain basic letters, numbers, and any of
+                  <code>-_.{}[]</code></i></small>
+              </div>
+            </div>
+          </div>
+          <div class="btn-set">
+            <input type="submit" name="commit" value="Create" class="btn btn-primary" disabled="disabled" data-disable-with="Create" />
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+</form>    </div>
+  </div>
+</div>
+<!-- /create team modal -->
+
+
+
+<!-- section -->
+<section class="section-p-md">
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <!-- sub-nav – vertical -->
+      <div class="col-lg-2 sub-nav-vertical-container">
+        <ul class="nav flex-column sticky-top-sub-nav" id="table-of-contents">
+        </ul>
+      </div>
+      <!-- /sub-nav – vertical -->
+
+      <!-- md content -->
+      <div class="col-md-8 col-lg-7" id="description-wrapper">
+        <div class="markdown-wrap">
+          <div class="md-content ck-content" data-controller="challenge-overview" data-action="resize@window->challenge-overview#showTOC" data-challenge-overview-scrollable-tabs="true">
+            <blockquote>
+<p>🏆 <strong><a href="https://discourse.aicrowd.com/t/announcing-community-engagement-prizes/4371">Announcing our community engagement prizes!</a></strong></p>
+
+<p>🗨 <strong><a href="https://discord.gg/XKGFSwpA">Join the office hours on Discord! (Wednesday 2PM CET)</a></strong></p>
+
+<p><strong><a href="https://www.aicrowd.com/challenges/insurance-pricing-game/discussion">❓&nbsp; Have a question? Visit the discussion forum</a></strong><strong> </strong></p>
+
+<p><strong><img alt="Python" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" style="height:15px; margin-bottom:0px; margin-top:0px; width:15px">&nbsp; <a href="https://colab.research.google.com/drive/1RsZfn1VSg4QLf43ufd3b3U-IWrNLptdD">Python Starter Notebook</a></strong></p>
+
+<p><strong><img alt="" src="https://www.r-project.org/logo/Rlogo.svg" style="height:19px; width:15px">&nbsp; <a href="https://colab.research.google.com/drive/1rXawVrD11gmiIi71tSOtJCZbZGRZhjCg">R Starter Notebook</a></strong></p>
+
+<p><strong>&lt;/&gt;&nbsp; <a href="https://gitlab.aicrowd.com/aicrowd/insurance-pricing-game-starter-kit">Code based starter kit</a></strong></p>
+</blockquote>
+
+<h2><strong><a href="https://discord.gg/dvtRS3Zvy3"><img alt="chat on Discord" src="https://img.shields.io/discord/657211973435392011?style=for-the-badge" style="height:28px; width:159px"></a></strong></h2>
+
+<h2>🔦 Overview</h2>
+
+<p>In this challenge, you will act as an insurance company, where you build a pricing model and compete against other players (other insurance companies) for profit. In other words, the player that maximises competitive profit is the winner.</p>
+
+<p>The market in this challenge will be a <code>cheapest-wins market</code>. That means every insurance company offers every customer an annual premium price, and the customer will always pick the company that offers the cheapest price to them (e.g., using&nbsp;a price comparison website).</p>
+
+<p>In order to create your pricing model, you are given historical insurance data: 60K real historical car insurance policies for 4 consecutive years. Each policy concerns 1 vehicle, its drivers and an accident history over 4 years. This data has been provided by a large car insurance provider in a European country and is a uniform sample for their entire portfolio.</p>
+
+<p>You are asked to produce a model to price contracts for incoming policies for the 5th year.</p>
+
+<p>The company that makes the most profit in this market, wins the challenge.</p>
+
+<h2>💵 Cheapest-wins market</h2>
+
+<p>As a player or team you represent one insurance company. You will have to provide a premium quote for every policy (or customer) you encounter. So does every other company. But the customer will pick the cheapest price offered to them. This is illustrated bellow:</p>
+
+<p><img alt="" src="https://d3000t1r8yrm6n.cloudfront.net/uploads/ckeditor/pictures/123/content_Screenshot_from_2020-09-16_18-15-01.png" style="height:323px; width:650px"></p>
+
+<p>Now that companies 1 and 2 each have a set amount of revenue, they have to pay out the cost of the claims accociated with policies 1-4. So it will look like:</p>
+
+<p><img alt="" src="https://d3000t1r8yrm6n.cloudfront.net/uploads/ckeditor/pictures/124/content_Screenshot_from_2020-09-16_18-26-11.png" style="height:431px; width:650px"></p>
+
+<p>So, once the claims are taken into account in the cheapest-wins market, we can see that Company 1 wins as it has the most competitive profit.</p>
+
+<ol>
+</ol>
+
+<h2>🏇 Leaderboards</h2>
+
+<p>As an insurance company in this market, you will be responsible for a portfolio of policies that pay you annual premiums. In exchange, you cover their risk. If they make a claim, you will have to pay.</p>
+
+<p>Therefore, to make money, you must:</p>
+
+<ol>
+	<li>Estimate&nbsp;the expected loss for your portfolio, so your contracts are profitable</li>
+	<li>Come up with a pricing strategy that allows you to compete with others, so that you win contracts</li>
+</ol>
+
+<p>To reach these goals we provide you with two leaderboards.</p>
+
+<h3>Root Mean Squared Error (RMSE) leaderboard</h3>
+
+<p>This leaderboard always displays your <em>best</em> RMSE submission.</p>
+
+<p>It uses your&nbsp;<code>predict_expected_claim</code> function and measures how well you can estimate the risk of policy IDs. It functions by measuring the root mean squared error (RMSE) of your premiums compared to the cost of the claim.</p>
+
+<p>The optimal way to minimise RMSE is done by a model that predicts the expected claim for each contract most accurately.</p>
+
+<p>This allows you to compare the quality of your loss prediction model with your competitors however, there is no explicit reward for performing well on this leaderboard.</p>
+
+<p>This leaderboard is refreshed instantaneously upon submissions, and will always use the same data, disjoint from the other leaderboard.</p>
+
+<p><strong>Please note</strong>: your RMSE score is computed in 4 stages. When you submit a model, your model makes predictions for:</p>
+
+<ol>
+	<li>Year 1 with access to data from year 1.</li>
+	<li>Year 2 with access to data from years 1 - 2.</li>
+	<li>Year 3 with access to data from years 1 - 3.</li>
+	<li>Year 4 with access to data from years 1 - 4.&nbsp;</li>
+</ol>
+
+<p>Predictions from steps 1 - 4 are then used in the standard RMSE formula to compute your final RMSE score.</p>
+
+<p>In this way you are to use past data to inform the present. For example predictions for year 3 can be informed by what happened in years 1 - 2.</p>
+
+<h3>Competitive profit leaderboard (Updated every Saturday at 10pm CET)</h3>
+
+<p>By default this leaderboard uses your most recent successful submission, but you can <a href="https://www.aicrowd.com/challenges/insurance-pricing-game/submissions/lock">choose another submission as well thought this form</a> that is also displayed at the <a href="https://www.aicrowd.com/challenges/insurance-pricing-game/leaderboards">top of the leaderboards</a>.</p>
+
+<p>It leaderboard uses your <code>predict_premium</code> function. It measures your average competitive profit in a market of size 10 when playing against other players.</p>
+
+<ol>
+	<li>Each week uses a new set of data to ensure that you don't price the same policy many times, like a real market.</li>
+	<li>This measures <code>competitive profit</code>. That means your profit is averaged over many markets that you play in.</li>
+	<li>To make sure that results are stable, we keep putting you in markets until your leaderboard rank no longer changes from market to market.</li>
+</ol>
+
+<p><strong>Note:</strong> This leaderboard is updated every <em><strong>Saturday at 10PM CET</strong></em> with your most recent submission.</p>
+
+<p><strong>If you do consistently well on this leaderboard, you will likely do well in the final evaluation.</strong></p>
+
+<ol>
+</ol>
+
+<h2>⚖ Evaluation metric</h2>
+
+<p>The final evaluation metric for this challenge is <code>competitive profit</code>: how much money does your company make in a <em>realistic market</em>. However we also provide a leaderboard using root mean squared error.</p>
+
+<h3>Root mean squared error (RMSE)</h3>
+
+<p>Given a set of list of claims&nbsp;<span class="math-tex">\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\)</span> and a set of expected claims <span class="math-tex">\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\)</span> predicted by your model, the RMSE is computed as:</p>
+
+<p><span class="math-tex">\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\)</span></p>
+
+<h3>Competitive profit (the final metric)</h3>
+
+<p>The evaluation process is as follows:</p>
+
+<ol>
+	<li><strong>Compute average profit rank. </strong>First the average competitive profit that your model makes in a market of size 10 (i.e. with 9 other random players) is computed. This gives your model a profit rank.</li>
+	<li><strong>Compute realistic <code>competitive profit</code>. </strong>In a <em>realistic market</em> models that don't perform well don't exist (i.e. go bankrupt). So to compute the realistic <code>competitive profit</code>, we place your model in a market of size 10 with 9 other models picked from the <strong>top 10%</strong> of the the ranking obtained in step 1.&nbsp;&nbsp;</li>
+</ol>
+
+<p><strong>Two important notes</strong>:</p>
+
+<ul>
+	<li>The profit rank in step 1 is not used in the leaderboard. Only the ranking in step 2 is used in the leaderboard.</li>
+	<li>Rankings from both steps are generated as a result of many many runs of different random markets. On average you can expect your model to have competed against every other model present at least once.</li>
+</ul>
+
+<h2>🚓&nbsp;Market rules</h2>
+
+<p>There are two rules that your submissions to the profit leaderboard, and final submissions must follow:</p>
+
+<ol>
+	<li><strong>Non-negative training profit. </strong>Your models must be profitable on the training data. That is, the sum of your premiums must not be less than the sum of the claims.</li>
+	<li><strong>Participation rule.</strong> Your model must participate (i.e. win at least 1 policy) in <em>5% or more</em> of the markets it is placed in.</li>
+</ol>
+
+<h2>📊 Weekly Market Feedback</h2>
+
+<p>In a real insurance market, every time you participate, you will get some feedback. In this game, each week thousands of markets are run! and you will get feedback about your performance in those markets.</p>
+
+<p>You get two types of feedback:</p>
+
+<ol>
+	<li><strong>A plot and some KPIs</strong></li>
+	<li><strong>Summary statstics about policies you have won</strong></li>
+</ol>
+
+<p>Below you can see examples of both of these. <a href="https://discourse.aicrowd.com/t/description-of-weekly-feedback/4204">For more details on how they are computed please see here. </a></p>
+
+<h3>Example feedback plot (<a href="https://discourse.aicrowd.com/t/description-of-weekly-feedback/4204">See here for details</a>)</h3>
+
+<p><img src="https://d3000t1r8yrm6n.cloudfront.net/uploads/ckeditor/pictures/223/market_feedback.png" style="height:347px; width:700px"></p>
+
+<h3>One example of the six feedback tables (<a href="https://discourse.aicrowd.com/t/description-of-weekly-feedback/4204">see here for details</a>)</h3>
+
+<h3><img src="https://d3000t1r8yrm6n.cloudfront.net/uploads/ckeditor/pictures/224/image.png" style="height:188px; width:700px"></h3>
+
+<h2>💾 Dataset</h2>
+
+<p>You can download the dataset from the <a href="https://www.aicrowd.com/challenges/insurance-pricing-game/dataset_files">resources tab</a>.</p>
+
+<p>The dataset contains a total of 100K real historical car insurance policies over 5 years in the recent past.</p>
+
+<p>This has been provided by a large car insurance provider in a European country and is a uniform sample from their entire portfolio.</p>
+
+<p>You can find the data dictionary under the <a href="https://www.aicrowd.com/challenges/insurance-pricing-game/dataset_files">resources tab</a>.</p>
+
+<p>The majority of the data concerns third-party liability but there are also other types of car insurance (e.g. theft) present.</p>
+
+<p>For this challenge, the data is split in the following way:</p>
+
+<h3>Training data</h3>
+
+<p>This is 60K policies with 4 years of history (~240K rows). It can be downloaded from the <a href="https://www.aicrowd.com/challenges/insurance-pricing-game/dataset_files">resources tab</a>.</p>
+
+<h3>RMSE leaderboard</h3>
+
+<p>This contains 5K policies with 4 years of history (~20K rows).&nbsp;</p>
+
+<h3>9 weekly profit leaderboards</h3>
+
+<p>This contains a total of 30K policies with 4 years of history (~115K rows). It is split into 9 weeks such that:</p>
+
+<ul>
+	<li>Weeks 1 - 5 each use approximately 7K rows of data from 15K policies with 4 years of history</li>
+	<li>Weeks 6 - 9 each use approximately 20K rows of data from 30K policies with 4 years of history</li>
+</ul>
+
+<p>No row of the data appears twice throughout the 9 weeks of leaderboards.</p>
+
+<h3>Test data</h3>
+
+<p>The final test dataset, where the final evaluation takes place, includes 100K policies for the 5th year (100K rows). To simulate a real insurance company, your training data will contain the history for some of these policies, while others will be entirely new to you.&nbsp;</p>
+
+<h2>📨 How to submit</h2>
+
+<p>There are two methods of submission available in this challenge:</p>
+
+<ol>
+	<li>Submission through Google Colaboratory notebooks.</li>
+	<li>Submission from a <code>.zip</code> file.</li>
+</ol>
+
+<h3>Submission via Colaboratory notebooks</h3>
+
+<p><a href="https://youtu.be/1HgJBaFxxF0"><img src="https://d3000t1r8yrm6n.cloudfront.net/uploads/ckeditor/pictures/225/video_card__1_.png" style="height:253px; width:450px"></a></p>
+
+<ol>
+	<li><strong>Python.&nbsp; </strong>Visit the <a href="https://colab.research.google.com/drive/1RsZfn1VSg4QLf43ufd3b3U-IWrNLptdD">starter notebook here</a>.</li>
+	<li><strong>R.</strong> Visit the <a href="https://colab.research.google.com/drive/1rXawVrD11gmiIi71tSOtJCZbZGRZhjCg">starter notebook here</a>. Here is an <a href="https://www.youtube.com/watch?v=1HgJBaFxxF0&amp;feature=youtu.be">end-to-end walkthrough for a simple R model</a>.</li>
+</ol>
+
+<p>The notebooks are self-contained and submissions are made through the notebooks themselves.</p>
+
+<h3>Submission via a ZIP file</h3>
+
+<p>Visit the starter-kit <a href="https://gitlab.aicrowd.com/aicrowd/insurance-pricing-game-starter-kit">available here</a> and follow the instructions.</p>
+
+<p>Once you have prepared your <code>.zip</code> file, you can then submit it using the link in the top right corner of the page here.</p>
+
+<p><strong>Note:</strong> baseline models are automatically excluded from the profit leaderboards.</p>
+
+<h2>🏆 Prizes</h2>
+
+<table border="2">
+	<thead>
+		<tr>
+			<th>&nbsp;</th>
+			<th>Amount</th>
+			<th>Prize sponsor</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1st</td>
+			<td>$6000 USD</td>
+			<td><a href="https://partnerre.com/"><img alt="PartnerRe" src="https://149448277.v2.pressablecdn.com/wp-content/uploads/2018/08/partnerre-logo.png" style="height:90px; width:168px"> </a></td>
+		</tr>
+		<tr>
+			<td>2nd</td>
+			<td>$3500 USD</td>
+			<td><a href="https://www.actuaries.org.sg/"><img alt="Singapore Actuarial Society" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBIPUHZuV4cAixZrlkTiVSP-sc1sM28kAsg&amp;usqp=CAU" style="height:90px; width:231px"></a></td>
+		</tr>
+		<tr>
+			<td>3rd</td>
+			<td>$1500 USD</td>
+			<td><a href="https://www.actuartech.com/"><img alt="Image" src="https://assets.website-files.com/5e1eff1b9094375d2b128f9e/5e5d870519986745c2f5126a_aquartechmainlogo100.jpeg" style="height:90px; width:314px"></a></td>
+		</tr>
+		<tr>
+			<td>4th</td>
+			<td>$1000 USD</td>
+			<td><a href="https://www.institutdesactuaires.com/"><img alt="Institut des Actuaires" src="https://www.institutdesactuaires.com/images/logos/logo.png?v=20200806" style="height:90px; width:299px"></a></td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>additional community engagement prizes</h3>
+
+<p>In addition to the 4 cash prizes for performance in the challenge. We also have community engagement prizes which are:</p>
+
+<ul>
+	<li><strong>A shiny mug </strong></li>
+	<li><strong>A great T-shirt</strong></li>
+</ul>
+
+<p><a href="https://discourse.aicrowd.com/t/announcing-community-engagement-prizes/4371">For more information on how to win these please see there</a>.</p>
+
+<h2>📅 Timeline</h2>
+
+<p><strong>Launch: </strong>18 December 2020 - 5:00pm UTC</p>
+
+<p><strong>Deadline: </strong>07 March 2021 - 11:59pm UTC</p>
+
+<p><strong>Team formation deadline: </strong>31 January 2021 - 11:59pm UTC</p>
+
+<h2>🌐&nbsp;Research sponsors</h2>
+
+<p>This research is supported in part, by the following institutions.</p>
+
+<table border="0" cellpadding="5" cellspacing="5">
+	<thead>
+		<tr>
+			<th><img alt="SwissRe" src="https://d3atsf3fgek2rw.cloudfront.net/content/uploads/2014/01/SR_Logo_CMYK_Lake-1002x314.jpg" style="height:120px; width:383px"></th>
+			<th colspan="3" style="width:200px"><img alt="Casualty Actuarial Society" src="https://www.casact.org/images/logo.png" style="height:150px; margin-left:50px; margin-right:50px; width:148px"></th>
+			<th><img alt="ASTIN Non-Life Insurance" src="https://www.actuaries.org/IAA/images/IAA/Logos/Section%20Logos/Original_IAA_ASTIN_RGB.jpg" style="height:200px; width:383px"></th>
+		</tr>
+	</thead>
+</table>
+
+<p>&nbsp;</p>
+
+<h2>📞 Contact</h2>
+
+<ul>
+	<li><a href="mailto:ali.farzanehfar@imperial.ac.uk">Ali Farzanehfar</a></li>
+	<li><a href="mailto:florimond@imperial.ac.uk">Florimond Houssiau</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- /md content -->
+      <div class="top-contributors-container col-sm-12 col-md-4 col-lg-3">
+          <header class="section-header mb-0">
+    <div>
+      <h4>Participants</h4>
+    </div>
+  </header>
+  <div>
+      <div class="row avatar-group p-3">
+      <span>
+        
+  <span id="participant_8136_20000">
+    <span data-controller="participants"
+          data-participants-participant="20000"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_8136_20000"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/20000/photo.jpg" />
+
+    </span>
+  </span>
+
+      </span>
+        <span>
+          
+  <span id="participant_8585_19495">
+    <span data-controller="participants"
+          data-participants-participant="19495"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_8585_19495"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19495/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_6a9b_19806">
+    <span data-controller="participants"
+          data-participants-participant="19806"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_6a9b_19806"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19806/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_9f0a_16736">
+    <span data-controller="participants"
+          data-participants-participant="16736"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_9f0a_16736"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (0)-12d44b8484956303a9da45eb6677f5e430c25d2434f0a1e6fc9e4a6aa9947da6.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_66de_19323">
+    <span data-controller="participants"
+          data-participants-participant="19323"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_66de_19323"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19323/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_ebf3_17591">
+    <span data-controller="participants"
+          data-participants-participant="17591"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_ebf3_17591"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17591/25537097.jpeg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_90e1_17681">
+    <span data-controller="participants"
+          data-participants-participant="17681"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_90e1_17681"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17681/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_c39e_18130">
+    <span data-controller="participants"
+          data-participants-participant="18130"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_c39e_18130"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18130/54215135.jpeg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_1d90_20048">
+    <span data-controller="participants"
+          data-participants-participant="20048"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_1d90_20048"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/20048/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_ec84_18894">
+    <span data-controller="participants"
+          data-participants-participant="18894"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_ec84_18894"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (6)-3b80e3e05c82b7305a121c824cb54c72d94bfc5de9528b69fa6d82638a475dca.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_7897_19849">
+    <span data-controller="participants"
+          data-participants-participant="19849"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_7897_19849"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19849/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_9584_19183">
+    <span data-controller="participants"
+          data-participants-participant="19183"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_9584_19183"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19183/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_c2ca_17761">
+    <span data-controller="participants"
+          data-participants-participant="17761"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_c2ca_17761"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17761/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_f810_18422">
+    <span data-controller="participants"
+          data-participants-participant="18422"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_f810_18422"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18422/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_5113_12400">
+    <span data-controller="participants"
+          data-participants-participant="12400"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_5113_12400"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (0)-12d44b8484956303a9da45eb6677f5e430c25d2434f0a1e6fc9e4a6aa9947da6.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_c399_19646">
+    <span data-controller="participants"
+          data-participants-participant="19646"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_c399_19646"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19646/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_a8fa_18216">
+    <span data-controller="participants"
+          data-participants-participant="18216"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_a8fa_18216"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (0)-12d44b8484956303a9da45eb6677f5e430c25d2434f0a1e6fc9e4a6aa9947da6.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_e2a7_9577">
+    <span data-controller="participants"
+          data-participants-participant="9577"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_e2a7_9577"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-2" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/9577/145257.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_03d2_18988">
+    <span data-controller="participants"
+          data-participants-participant="18988"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_03d2_18988"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18988/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_414a_17544">
+    <span data-controller="participants"
+          data-participants-participant="17544"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_414a_17544"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17544/48299815.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_e2ff_19552">
+    <span data-controller="participants"
+          data-participants-participant="19552"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_e2ff_19552"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19552/43614047.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_0481_17720">
+    <span data-controller="participants"
+          data-participants-participant="17720"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_0481_17720"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17720/7494694.jpeg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_8b27_18785">
+    <span data-controller="participants"
+          data-participants-participant="18785"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_8b27_18785"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18785/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_7dd3_17887">
+    <span data-controller="participants"
+          data-participants-participant="17887"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_7dd3_17887"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17887/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_1eb1_17789">
+    <span data-controller="participants"
+          data-participants-participant="17789"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_1eb1_17789"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (5)-e9457bf12aa7f46d874121bf4f45c1e6e7f861fb84bbdcd1b94510365e6bea6b.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_99a1_18711">
+    <span data-controller="participants"
+          data-participants-participant="18711"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_99a1_18711"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18711/23477481.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_7a80_18245">
+    <span data-controller="participants"
+          data-participants-participant="18245"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_7a80_18245"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18245/94AAA3FD-DC9E-4D1C-9571-EB8B31E9F99D_1_201_a.jpeg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_f568_18096">
+    <span data-controller="participants"
+          data-participants-participant="18096"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_f568_18096"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (0)-12d44b8484956303a9da45eb6677f5e430c25d2434f0a1e6fc9e4a6aa9947da6.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_6d0b_16705">
+    <span data-controller="participants"
+          data-participants-participant="16705"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_6d0b_16705"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/16705/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_ed04_14190">
+    <span data-controller="participants"
+          data-participants-participant="14190"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_ed04_14190"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (6)-3b80e3e05c82b7305a121c824cb54c72d94bfc5de9528b69fa6d82638a475dca.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_ea3b_5975">
+    <span data-controller="participants"
+          data-participants-participant="5975"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_ea3b_5975"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (7)-62dbcda6cb15f3ab4796779fc8a95a1c45ef97f657f2f13a662d6c990f08cffd.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_788b_20090">
+    <span data-controller="participants"
+          data-participants-participant="20090"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_788b_20090"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/20090/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_68f4_17940">
+    <span data-controller="participants"
+          data-participants-participant="17940"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_68f4_17940"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17940/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_7961_18860">
+    <span data-controller="participants"
+          data-participants-participant="18860"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_7961_18860"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18860/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_162b_18338">
+    <span data-controller="participants"
+          data-participants-participant="18338"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_162b_18338"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18338/59232243.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_c7d0_19770">
+    <span data-controller="participants"
+          data-participants-participant="19770"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_c7d0_19770"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19770/unnamed.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_a8a6_18790">
+    <span data-controller="participants"
+          data-participants-participant="18790"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_a8a6_18790"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (6)-3b80e3e05c82b7305a121c824cb54c72d94bfc5de9528b69fa6d82638a475dca.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_8ab1_17885">
+    <span data-controller="participants"
+          data-participants-participant="17885"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_8ab1_17885"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17885/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_b9bd_18081">
+    <span data-controller="participants"
+          data-participants-participant="18081"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_b9bd_18081"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18081/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_33d8_17603">
+    <span data-controller="participants"
+          data-participants-participant="17603"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_33d8_17603"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17603/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_a8a1_18509">
+    <span data-controller="participants"
+          data-participants-participant="18509"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_a8a1_18509"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (5)-e9457bf12aa7f46d874121bf4f45c1e6e7f861fb84bbdcd1b94510365e6bea6b.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_5f1a_18611">
+    <span data-controller="participants"
+          data-participants-participant="18611"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_5f1a_18611"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18611/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_82ac_20193">
+    <span data-controller="participants"
+          data-participants-participant="20193"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_82ac_20193"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/20193/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_ba27_18726">
+    <span data-controller="participants"
+          data-participants-participant="18726"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_ba27_18726"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/18726/12830828.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_f282_19264">
+    <span data-controller="participants"
+          data-participants-participant="19264"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_f282_19264"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19264/18098454.jpeg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_0f67_20126">
+    <span data-controller="participants"
+          data-participants-participant="20126"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_0f67_20126"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/20126/photo.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_2312_19201">
+    <span data-controller="participants"
+          data-participants-participant="19201"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_2312_19201"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/19201/unnamed.jpg" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_369e_17967">
+    <span data-controller="participants"
+          data-participants-participant="17967"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_369e_17967"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17967/26148318.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_62d5_17504">
+    <span data-controller="participants"
+          data-participants-participant="17504"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_62d5_17504"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (0)-12d44b8484956303a9da45eb6677f5e430c25d2434f0a1e6fc9e4a6aa9947da6.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_8932_19076">
+    <span data-controller="participants"
+          data-participants-participant="19076"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_8932_19076"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/users/AIcrowd-DarkerBG (4)-1b4da38ff74e25b6e280ed0e048e7a365079f44b45075b1fd4dc43fb68e76fff.png" />
+
+    </span>
+  </span>
+
+        </span>
+        <span>
+          
+  <span id="participant_7847_17713">
+    <span data-controller="participants"
+          data-participants-participant="17713"
+          data-participants-username="false"
+          data-participants-avatar="true"
+          data-participants-truncate="false"
+          data-participants-location="participant_7847_17713"
+          data-action="mouseenter->participants#getUserProfile">
+        <img class="avatar user-rating-1" src="https://d3000t1r8yrm6n.cloudfront.net/images/participants/image_file/17713/73042482.png" />
+
+    </span>
+  </span>
+
+        </span>
+      <span class="avatar user-rating-0 text-center" data-toggle="tooltip" title="1589 more participants">
+        <span class="fa fa-ellipsis-h align-bottom"></span>
+      </span>
+    </div>
+  </div>
+  <header class="section-header mt-4">
+  <div>
+    <h4>Getting Started</h4>
+  </div>
+</header>
+<table class="table table-responsive-md side-border">
+  <tbody>
+    
+  <ul class="list-group list-group-flush-px-0 list-group-discussion">
+    <!-- topic -->
+    <li class="list-group-item">
+      <div class="col-9">
+        <div class="like-counter-vertical">
+          <span>17</span>
+            <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-1429cb6fd2b85c880ef155458c019ca98ecbde1d65a841ba63da9998121bb8af.svg" />
+        </div>
+
+        <div>
+          <a class="topic-title text-link" href="https://discourse.aicrowd.com/t/description-of-weekly-feedback">Description of weekly feedback</a>
+
+            <span>About 1 month ago</span>
+        </div>
+      </div>
+
+      <div class="avatar-group col-2">
+      </div>
+
+      <div class="topic-comments">
+        <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+        15
+      </div>
+    </li>
+    <!-- /topic -->
+  </ul>
+
+  <ul class="list-group list-group-flush-px-0 list-group-discussion">
+    <!-- topic -->
+    <li class="list-group-item">
+      <div class="col-9">
+        <div class="like-counter-vertical">
+          <span>11</span>
+            <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-1429cb6fd2b85c880ef155458c019ca98ecbde1d65a841ba63da9998121bb8af.svg" />
+        </div>
+
+        <div>
+          <a class="topic-title text-link" href="https://discourse.aicrowd.com/t/insurance-pricing-game-eda">Insurance Pricing Game : EDA</a>
+
+            <span>23 days ago</span>
+        </div>
+      </div>
+
+      <div class="avatar-group col-2">
+      </div>
+
+      <div class="topic-comments">
+        <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+        2
+      </div>
+    </li>
+    <!-- /topic -->
+  </ul>
+
+  <ul class="list-group list-group-flush-px-0 list-group-discussion">
+    <!-- topic -->
+    <li class="list-group-item">
+      <div class="col-9">
+        <div class="like-counter-vertical">
+          <span>6</span>
+            <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-1429cb6fd2b85c880ef155458c019ca98ecbde1d65a841ba63da9998121bb8af.svg" />
+        </div>
+
+        <div>
+          <a class="topic-title text-link" href="https://discourse.aicrowd.com/t/insurance-pricing-game-eda">Insurance pricing game: EDA</a>
+
+            <span>25 days ago</span>
+        </div>
+      </div>
+
+      <div class="avatar-group col-2">
+      </div>
+
+      <div class="topic-comments">
+        <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+        3
+      </div>
+    </li>
+    <!-- /topic -->
+  </ul>
+
+  <ul class="list-group list-group-flush-px-0 list-group-discussion">
+    <!-- topic -->
+    <li class="list-group-item">
+      <div class="col-9">
+        <div class="like-counter-vertical">
+          <span>5</span>
+            <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-1429cb6fd2b85c880ef155458c019ca98ecbde1d65a841ba63da9998121bb8af.svg" />
+        </div>
+
+        <div>
+          <a class="topic-title text-link" href="https://discourse.aicrowd.com/t/r-starter-kit">🚀 R Starter Kit</a>
+
+            <span>About 2 months ago</span>
+        </div>
+      </div>
+
+      <div class="avatar-group col-2">
+      </div>
+
+      <div class="topic-comments">
+        <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+        6
+      </div>
+    </li>
+    <!-- /topic -->
+  </ul>
+
+  <ul class="list-group list-group-flush-px-0 list-group-discussion">
+    <!-- topic -->
+    <li class="list-group-item">
+      <div class="col-9">
+        <div class="like-counter-vertical">
+          <span>0</span>
+            <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-grey-8d0e3a8976ddca11b9ebbd278e83d3081070c6a7e1de68ac23de9724ee5dfd56.svg" />
+        </div>
+
+        <div>
+          <a class="topic-title text-link" href="https://discourse.aicrowd.com/t/python-starter-kit">🚀 Python Starter Kit</a>
+
+            <span>2 months ago</span>
+        </div>
+      </div>
+
+      <div class="avatar-group col-2">
+      </div>
+
+      <div class="topic-comments">
+        <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+        1
+      </div>
+    </li>
+    <!-- /topic -->
+  </ul>
+
+  </tbody>
+</table>
+
+
+  <header class="section-header">
+    <div>
+      <h4>Notebooks</h4>
+    </div>
+
+    <a class="btn btn-secondary btn-sm" href="/challenges/insurance-pricing-game/notebooks">See all</a>
+  </header>
+  <table class="table table-responsive-md">
+  <tbody id="posts-div">
+      <tr>
+        <td>
+          <div class="like-counter-vertical">
+            <span>11</span>
+              <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-1429cb6fd2b85c880ef155458c019ca98ecbde1d65a841ba63da9998121bb8af.svg" />
+          </div>
+        </td>
+        <td>
+          <div>
+          <span><a class="topic-title text-link" style="font-weight: bold; color: #434547; font-size: 16px;" href="/showcase/insurance-pricing-game-eda-colab-notebook">Insurance Pricing Game : EDA</a></span>
+          <br/><span>By <div style="display: inline-flex;">
+  <span id="participant_1e21_19120">
+    <span data-controller="participants"
+          data-participants-participant="19120"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="false"
+          data-participants-location="participant_1e21_19120"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link ">chris3</span>
+
+    </span>
+  </span>
+</span></div> 23 days ago</span>
+          </div>
+        </td>
+        <td>
+          <div class="topic-comments">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+          1
+      </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="like-counter-vertical">
+            <span>1</span>
+              <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-1429cb6fd2b85c880ef155458c019ca98ecbde1d65a841ba63da9998121bb8af.svg" />
+          </div>
+        </td>
+        <td>
+          <div>
+          <span><a class="topic-title text-link" style="font-weight: bold; color: #434547; font-size: 16px;" href="/showcase/insurance-pricing-game-eda-in-r">Insurance Pricing Game EDA in R</a></span>
+          <br/><span>By <div style="display: inline-flex;">
+  <span id="participant_b429_19094">
+    <span data-controller="participants"
+          data-participants-participant="19094"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="false"
+          data-participants-location="participant_b429_19094"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link ">lolatu2</span>
+
+    </span>
+  </span>
+</span></div> 2 days ago</span>
+          </div>
+        </td>
+        <td>
+          <div class="topic-comments">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+          0
+      </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="like-counter-vertical">
+            <span>7</span>
+              <img alt="Like icon" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-like-1429cb6fd2b85c880ef155458c019ca98ecbde1d65a841ba63da9998121bb8af.svg" />
+          </div>
+        </td>
+        <td>
+          <div>
+          <span><a class="topic-title text-link" style="font-weight: bold; color: #434547; font-size: 16px;" href="/showcase/insurance-pricing-game-eda">Insurance pricing game: EDA</a></span>
+          <br/><span>By <div style="display: inline-flex;">
+  <span id="participant_7ba0_18944">
+    <span data-controller="participants"
+          data-participants-participant="18944"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="false"
+          data-participants-location="participant_7ba0_18944"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link ">mrmorj</span>
+
+    </span>
+  </span>
+</span></div> 25 days ago</span>
+          </div>
+        </td>
+        <td>
+          <div class="topic-comments">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-comment-11e998ea01cd8cbe77d3cbff35bb8c27e78c508e352bdb847fb56b76717b4c6b.svg" />
+          2
+      </div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+  <header class="section-header mt-4">
+  <div>
+    <h4>Latest Submissions</h4>
+  </div>
+  <form class="button_to" method="get" action="/challenges/insurance-pricing-game/submissions"><input class="btn btn-secondary btn-sm" type="submit" value="See all" /></form>
+</header>
+<table class="table table-responsive-md side-border">
+  <tbody id="submissions-div">
+      <tr>
+        <td>
+            
+  <span id="participant_13aa_20017">
+    <span data-controller="participants"
+          data-participants-participant="20017"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="true"
+          data-participants-location="participant_13aa_20017"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link truncate">camillem</span>
+
+    </span>
+  </span>
+
+        </td>
+        <td><span class="badge badge-gold" data-toggle="tooltip" data-placement="top" title="Fri, 12 Feb 2021 17:46:57" >submitted</span></td>
+      </tr>
+      <tr>
+        <td>
+            
+  <span id="participant_d5f6_18801">
+    <span data-controller="participants"
+          data-participants-participant="18801"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="true"
+          data-participants-location="participant_d5f6_18801"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link truncate">FrankSchmid</span>
+
+    </span>
+  </span>
+
+        </td>
+        <td><span class="badge badge-warning" data-toggle="tooltip" data-placement="top" title="Fri, 12 Feb 2021 17:31:39" >failed</span></td>
+      </tr>
+      <tr>
+        <td>
+            
+  <span id="participant_8197_16719">
+    <span data-controller="participants"
+          data-participants-participant="16719"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="true"
+          data-participants-location="participant_8197_16719"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link truncate">pitusg</span>
+
+    </span>
+  </span>
+
+        </td>
+        <td><span class="badge badge-success" data-toggle="tooltip" data-placement="top" title="Fri, 12 Feb 2021 17:18:29" >graded</span></td>
+      </tr>
+      <tr>
+        <td>
+            
+  <span id="participant_80d9_18827">
+    <span data-controller="participants"
+          data-participants-participant="18827"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="true"
+          data-participants-location="participant_80d9_18827"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link truncate">tk230147</span>
+
+    </span>
+  </span>
+
+        </td>
+        <td><span class="badge badge-warning" data-toggle="tooltip" data-placement="top" title="Fri, 12 Feb 2021 17:02:25" >failed</span></td>
+      </tr>
+      <tr>
+        <td>
+            
+  <span id="participant_b92d_18801">
+    <span data-controller="participants"
+          data-participants-participant="18801"
+          data-participants-username="true"
+          data-participants-avatar="false"
+          data-participants-truncate="true"
+          data-participants-location="participant_b92d_18801"
+          data-action="mouseenter->participants#getUserProfile">
+        <span class="text-link truncate">FrankSchmid</span>
+
+    </span>
+  </span>
+
+        </td>
+        <td><span class="badge badge-success" data-toggle="tooltip" data-placement="top" title="Fri, 12 Feb 2021 16:58:12" >graded</span></td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+    </div>
+    
+<!-- app footer -->
+<footer class="app-footer">
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- app brand -->
+			<div class="app-brand col-3 col-lg-4">
+				<div class="app-brand">
+					<a class="logo-aicrowd-light" href="/">
+						<span>AIcrowd</span>
+					</a>
+				</div>
+			</div>
+			<!-- /app brand -->
+
+			<!-- platform -->
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<h4>Platform</h4>
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="/challenges">Challenges</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/landing_page/host">Organize a Challenge</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/faq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/our_team">Our Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/jobs">We are Hiring!</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /platform -->
+
+			<!-- connect -->
+			<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<h4>Connect</h4>
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="/blogs">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/AIcrowd/AIcrowd">GitHub<img alt="GitHub" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-external-link-58b07c56ee994c2de8f783c0a7eabf14d19bb83560420af768297b3d1f7f39a9.svg" /></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="http://gitlab.aicrowd.com/">GitLab<img alt="GitLab" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-external-link-58b07c56ee994c2de8f783c0a7eabf14d19bb83560420af768297b3d1f7f39a9.svg" /></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://twitter.com/AIcrowdHQ">Twitter<img alt="Twitter" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-external-link-58b07c56ee994c2de8f783c0a7eabf14d19bb83560420af768297b3d1f7f39a9.svg" /></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://discourse.aicrowd.com">Discourse<img alt="Discourse" src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-external-link-58b07c56ee994c2de8f783c0a7eabf14d19bb83560420af768297b3d1f7f39a9.svg" /></a>
+					</li>
+				</ul>
+			</div>
+			<!-- /connect -->
+
+			<!-- legal -->
+			<div class="section-legal col-12 col-sm-4 col-md-3 col-lg-4">
+				<h4>Legal</h4>
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="/cookies">Cookie consent</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/terms">Terms of Use</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/participation_terms">Participation Terms</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/privacy">Privacy</a>
+					</li>
+				</ul>
+				<p>&#169; 2021 AIcrowd. All rights reserved.</p>
+			</div>
+			<!-- /legal -->
+
+		</div>
+	</div>
+</footer>
+<!-- custom footer -->
+	<style>
+.btn-primary {
+    color: #fff !important;
+}
+.btn-google {
+  border: 1px solid #b3b3b3;
+}
+@media(max-width: 991.98px) {
+  .sub-nav-bar .btn {
+    display: block !important;
+  }
+  .feedback-button {
+    display: none;
+  }
+}
+.table-leaderboard .btn-sm {
+    padding: 0.25rem 0.875rem;
+    border-radius: 1.5rem;
+}
+.card-challenge .card-footer a {
+    display: unset;
+}
+.contribution-details .image-link img {
+    height: 80px;
+    width: 80px;
+}
+.output_wrapper {
+    max-height: 300px;
+    overflow: scroll;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  //$('.table-leaderboard .btn-twitter').hide();
+  $('#eua-file').append(" Download");
+  $('body img[src*="://discourse.aicrowd.com/images/emoji/"]').css('width', '24px');
+
+  $('div[data-controller=mermaid]').prepend('<span class="col-md-6"><span class="badge badge-outline pl-0 cursor-pointer float-right" onClick="window.location.reload();"><img src="/assets/img/icon-time.svg">🔄 Refresh</span></span><span class="badge pl-0 float-right"><img src="/assets/img/icon-time.svg">🔒Private</span>');
+
+  $($('.card-title a[href="/challenges/spotify-million-playlist-dataset-challenge"]').closest('.card-challenge')[0]).find('.badge-primary').html('<img src="/assets/img/icon-time.svg"> Benchmark Challenge: Running');
+
+  //$('a[href$=flatland-challenge] .badge-success:last()').html('<img src="/assets/img/icon-time.svg">&nbsp;Round 2: Starting Soon').removeClass('badge-success').addClass('badge-primary');
+  if (window.location.pathname.startsWith("/challenges/flatland")) {
+    if ($('.sub-nav-bar .btn-primary').prop("href").endsWith("challenges/flatland/submissions/new")) {
+      $('.sub-nav-bar .btn-primary').prop("href", "https://flatland.aicrowd.com/getting-started/first-submission.html");
+    }
+    //$('<span class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title=""><img src="/assets/img/icon-time.svg">&nbsp;Round 2: Starting Soon</span>').insertAfter('.masthead .badge-success:last()');
+  }
+  if (window.location.pathname == "/") {
+    $('.list-group-discussion .avatar-group').css('padding', '2px');
+    $('.list-group-discussion .avatar-group').css('overflow-y', 'hidden');
+  }
+  if (window.location.pathname.startsWith("/challenges/neurips-2020-flatland-challenge/submissions")) {
+    $('h4:contains(" percentage_complete ")').parent().parent().attr('style','display: none !important');
+    $('h4:contains(" normalized_reward ")').parent().parent().attr('style','display: none !important');
+    $('h4:contains(" reward ")').parent().parent().attr('style','display: none !important');
+  }
+  if (window.location.pathname.startsWith("/challenges/flatland-challenge/submissions")) {
+    $('h4:contains(" percentage_complete ")').parent().parent().attr('style','display: none !important');
+    $('h4:contains(" normalized_reward ")').parent().parent().attr('style','display: none !important');
+    $('h4:contains(" reward ")').parent().parent().attr('style','display: none !important');
+  }
+  if (window.location.pathname.startsWith("/challenges/food-recognition-challenge")) {
+    $('.prize-item-travel').text('1 all expenses paid trip to Switzerland to attend AMLD');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/spotify-million-playlist-dataset-challenge")) {
+    $('.table th:contains("plex_clicks")').text('Recommended Songs Clicks');
+    $('h4:contains("plex_clicks")').text('Recommended Songs Clicks');
+  }
+
+if (window.location.pathname.startsWith("/challenges/trajnet-a-trajectory-forecasting-challenge/submissions/new")) {
+    $('#description-wrapper form .form-group').first().prepend('<div class="form-group"> <label for="submission_clef_method_description">Method Name</label> <span class="required">*</span> <textarea class="form-control" name="submission[clef_method_description]" id="submission_clef_method_description" spellcheck="false" required=""></textarea> </div><div class="form-group"> <label for="submission_clef_method_description">Paper Title/Arxiv Link</label> <textarea class="form-control" name="submission[clef_additional]" id="submission_clef_additional" spellcheck="false"></textarea> </div>');
+}
+
+  if (window.location.pathname.startsWith("/blogs/learn-rl")) {
+    $('.md-content p strong').css('color', '#F0524D');
+  }
+if (window.location.pathname.startsWith("/blogs/ai-for-beginners")) {
+    $('.md-content p strong').css('color', '#F0524D');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/learning-to-smell/dataset_files") || window.location.pathname.startsWith("/challenges/ai-blitz-4/problems/learning-to-smell/dataset_files")) {
+        $('.list-group-dataset a.text-link').each(function(){
+        var mapping = {
+            'test': '(1079 molecules) : File that will be used for actual evaluation for the leaderboard score but does not have the "Sentence" for molecules.',
+            'sample_submission': 'Example submission file for the challenge',
+            'train': '(4316 molecules) : This csv file contains the attributes describing the molecules along with their "Sentence"',
+            'vocabulary': 'A file containing the list of all odors present in the dataset'
+        }
+        for (var key in mapping) {
+            if($(this).text().trim().startsWith(key)) {
+                $(this).closest('div').find('.description').text(mapping[key]);
+            }
+        }
+    });
+  }
+
+  if (window.location.pathname.startsWith("/challenges/miccai-2020-hecktor/submissions/new") || window.location.pathname.startsWith("/challenges/hecktor/submissions/new")) {
+    $('[name="submission[clef_retrieval_type]"]').closest('div').hide();
+    $('[name="submission[clef_run_type]"]').closest('div').hide();
+    $('[name="submission[clef_other_info]"]').closest('div').hide();
+    $('[name="submission[clef_primary_run]"]').closest('div').find('small').hide();
+    $('[name="submission[clef_primary_run]"]').closest('div').find('label').text('External training data used?');
+    $('[name="submission[clef_additional]"]').closest('div').find('label').text('External training data used');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/spotify-million-playlist-dataset-challenge")) {
+    $($('.badge-primary')[0]).html('<img src="/assets/img/icon-time.svg"> Benchmark Challenge: Running');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/insurance-pricing-game")) {
+    $('.sub-nav-bar li').filter(function() { return this.innerText === 'Insights'}).hide();
+    $('.sub-nav-bar ul:first').find(' > li:nth-last-child(2)').before('<li class="nav-item"><a class="nav-link" href="https://www.aicrowd.com/challenges/insurance-pricing-game/submissions/lock">Pick submission for profit leaderboard</a></li>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/insurance-pricing-game/leaderboards")) 
+  {
+    $('.nav-pills .nav-link').not('.active').css('border', '1px solid #F0524D');
+    $('.nav-pills .nav-link').not('.active').css('color', '#F0524D');
+    $('.nav-pills .nav-link').not('.active').css('margin-left', '10px');
+    $('.nav-pills .nav-link').not('.active').css('font-weight', 'bold');
+    $('.nav-pills').prepend('<li class="nav-item"><a class="nav-link"><b>Select Leaderboard:</b></a></li>');
+    $('.leaderboard-position-user-score').hide();
+  }
+
+  if (window.location.pathname.startsWith("/challenges/insurance-pricing-game/submissions")) 
+  {
+    $('a.sort_link').filter(function() { return $(this).text() === 'Participation'}).text('RMSE');
+    $('a.sort_link').filter(function() { return $(this).text() === 'Average Profit'}).text('-');
+    $('section h4').filter(function() { return $(this).text() == 'Participation' }).text('RMSE');
+    $('section h4').filter(function() { return $(this).text() == 'Average Profit' }).text('-');
+
+  }
+
+  if (window.location.pathname.startsWith("/challenges/seismic-facies-identification-challenge") || window.location.pathname.startsWith("/challenges/ai-blitz-4/problems/seismic-facies-identification-challenge")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+
+  if (window.location.pathname.startsWith("/challenges/ai-blitz-4/problems/seismic-facies-identification-challenge/leaderboards")) {
+    $('.leaderboard-filters-btn').append('<a href="/challenges/seismic-facies-identification-challenge/leaderboards"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="This leaderboard contains only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Remove Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/seismic-facies-identification-challenge/leaderboards")) {
+    //$('.leaderboard-filters-btn').append('<a href="/challenges/ai-blitz-4/problems/seismic-facies-identification-challenge/leaderboards"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="Show only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Activate Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/mediqa-2021")) {
+    $('.badge-gold').hide();
+  }
+
+  if (window.location.pathname.startsWith("/challenges/ai-blitz-4/problems/seismic-facies-identification-challenge/submissions")) {
+    $('.submission-filters-btn').append('<a href="/challenges/seismic-facies-identification-challenge/submissions"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="This contains only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Remove Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/seismic-facies-identification-challenge/submissions")) {
+    $('.submission-filters-btn').append('<a href="/challenges/ai-blitz-4/problems/seismic-facies-identification-challenge/submissions"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="Show only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Activate Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/learning-to-smell")) {
+    $('.priority-nav').append('<a class="btn btn-primary btn-sm pull-right" href="https://github.com/AIcrowd/learning-to-smell-starter-kit">Create Submission</a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/ai-blitz-4/problems/learning-to-smell/leaderboards")) {
+    $('.leaderboard-filters-btn').append('<a href="/challenges/learning-to-smell/leaderboards"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="This leaderboard contains only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Remove Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/learning-to-smell/leaderboards")) {
+    //$('.leaderboard-filters-btn').append('<a href="/challenges/ai-blitz-4/problems/learning-to-smell/leaderboards"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="Show only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Activate Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/ai-blitz-4/problems/learning-to-smell/submissions")) {
+    $('.submission-filters-btn').append('<a href="/challenges/learning-to-smell/submissions"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="This contains only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Remove Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/learning-to-smell/submissions")) {
+    //$('.submission-filters-btn').append('<a href="/challenges/ai-blitz-4/problems/learning-to-smell/submissions"><span class="pull-right mr-1" title="" data-toggle="tooltip" data-original-title="Show only submissions valid for Blitz"><button class="btn btn-secondary btn-sm" type="button">Activate Blitz ⚡ Filter</button></span></a>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/neurips-2020-procgen-competition")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+
+  if (window.location.pathname.startsWith("/challenges/clock-decomposition-challenge")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').addClass('btn-sm mr-2 mb-3').css('background', 'white');
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+    }
+  }
+
+  if (window.location.pathname.startsWith("/challenges/dl-nlp-assignment-1")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').addClass('btn-sm mr-2 mb-3').css('background', 'white');
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+    }
+  }
+
+  if (window.location.pathname.startsWith("/challenges/food-recognition-challenge")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+  if (window.location.pathname.startsWith("/challenges/da-wine-quality-assignment")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+  if (window.location.pathname.startsWith("/challenges/ai-blitz-5/problems/objde")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+
+  if (window.location.pathname.startsWith("/challenges/ai-blitz-6")) {
+    if(window.location.pathname.startsWith("/challenges/ai-blitz-6/submissions")) {
+        $('blockquote').hide();
+    }
+
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group:first').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group:first').css('background', 'white');
+      $('.stats-group:first .stat-item span').css("color", "black");
+      $('.stats-group:first').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+function timeSince(date) {
+
+  var seconds = Math.floor((date - new Date()) / 1000);
+
+  var interval = seconds / 31536000;
+
+  if (interval > 1) {
+    return Math.floor(interval) + " years";
+  }
+  interval = seconds / 2592000;
+  if (interval > 1) {
+    return Math.floor(interval) + " months";
+  }
+  interval = seconds / 86400;
+  if (interval > 1) {
+    return Math.floor(interval) + " days";
+  }
+  interval = seconds / 3600;
+  if (interval > 1) {
+    return Math.floor(interval) + " hours";
+  }
+  interval = seconds / 60;
+  if (interval > 1) {
+    return Math.floor(interval) + " minutes";
+  }
+  return Math.floor(seconds) + " seconds";
+}
+var text = timeSince(new Date("01 Mar 2021 00:00:00 +0000")) + " left";
+var html = `<a href="https://www.aicrowd.com/challenges/ai-blitz-6/notebooks"><span class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="2021-03-01 13:00:00 UTC">
+          <img src="https://d3qvx1ggyg4lu1.cloudfront.net/assets/img/icon-time.svg">
+          Community Contribution: `+text+`
+    </span></a>`;
+$('.masthead .col-12').first().prepend(html);
+  }
+
+
+  if (window.location.pathname.startsWith("/challenges/da-project-monsoon-2020")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+  if (window.location.pathname.startsWith("/challenges/dr-derk-s-mutant-battlegrounds")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', '#B50B18');
+      $('.stat-item span').css("color", "white");
+      $('.stats-group').css('border', '1px solid #000000');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+
+  if (window.location.pathname.startsWith("/challenges/dr-derks-mutant-battlegrounds")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', '#B50B18');
+      $('.stat-item span').css("color", "white");
+      $('.stats-group').css('border', '1px solid #000000');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+  if (window.location.pathname.startsWith("/leaderboard") || window.location.pathname.startsWith("/blogs/reputation-system-launch")) {
+    $(this).delay(500).queue(function(){
+        $($('.container-fluid')[2]).prepend('<div class="col-12 alert alert-info alert-fixed mb-4 p-3"><span class="fa fa-info border p-2 rounded mr-2"></span>Based on your feedback and suggestion, we are currently revamping our Ranking system. All the Rankings are paused for now. We will update you when the new system goes live. Thank you!</div>');
+    });
+  }
+
+
+  if (window.location.pathname.startsWith("/challenges/olnwp")) {
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.organizer-attribution').hide();
+      $('.stats-group').addClass('btn-sm mr-2 mb-3 pb-0');
+      $('.stats-group').css('background', 'white');
+      $('.stat-item span').css("color", "black");
+      $('.stats-group').css('border', '1px solid #AAACAD');
+      var orgactions = $('.masthead .dropdown').detach(); 
+      $('.sub-nav-bar .container-fluid').append(orgactions);
+    }
+  }
+
+  if (window.location.pathname.startsWith("/challenges/polln/challenge_rules")) {
+    $('div form.mt-5').closest('.container-fluid').prepend('<div class="row"><div class="col-12 mb-n3"><h4 class="mt-5">Survey (optional)</h4><p>This is a research problem and part of a study at Imperial College of London.<br>We would really appreciate it if you take 2 minutes out to fill this <a href="https://forms.gle/fSkD6c6MtDu7njSz6" target="_blank">survey</a></p></div></div>');
+  }
+
+  if (window.location.pathname.startsWith("/challenges/com-516-markov-chains-and-algorithmic-applications/leaderboards")) {
+    if (localStorage.getItem("leaderboard-geek-view") === null) {
+        $('.geek-view-normal').addClass('d-none', 100);
+        $('.geek-view-advanced').removeClass('d-none', 100);
+        localStorage.setItem('leaderboard-geek-view', true);
+    }
+  }
+
+  if (window.location.pathname.startsWith("/challenges/com-516-markov-chains-and-algorithmic-applications/challenge_rules")) {
+    $('[name="challenge_participant[registration_form_details][EPFL Email]"]').attr("pattern", '[a-z0-9._%+-]+@epfl.ch$');
+}
+
+if (window.location.pathname.startsWith("/contributions/")) {
+  $('.form-challenge-card-image').closest('.col-md-12').hide();
+    $('.content section').toggleClass('section-p-md section');
+}
+
+  if (window.location.pathname.startsWith("/challenges/neurips-2020-minerl-challenge") || window.location.pathname.startsWith("/challenges/neurips-2020-minerl-competition")) {
+    $('.masthead .badge-success:last()').hide();
+    //$('<span class="badge badge-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title=""><img src="/assets/img/icon-time.svg">&nbsp;Round 2: Starting Soon</span>').insertAfter('.masthead .badge-success:last()');
+
+    if (!window.matchMedia('(max-width: 767px)').matches) {
+      $('.stat-item span').css("color", "black");
+      $('.stat-item span').css("filter", "invert(1)");
+      $('.stat-item img').css("filter", "brightness(0)");
+      $('.masthead-challenge .stat-item, .organizer-attribution span').css("color", "white");
+    }
+
+    $('.top-contributors-container table').hide();
+    $('.top-contributors-container header:not(:first)').hide();
+    
+    if (window.location.pathname.startsWith("/challenges/neurips-2020-minerl-competition/leaderboards") || window.location.pathname.startsWith("/challenges/neurips-2020-minerl-challenge/leaderboards")) {
+      $("div").find('[data-original-title="Browse codebase (based on your access permissions)"]').hide();
+
+      var baseline_thumb = '<td><span class="fa fa-thumb-tack" data-toggle="tooltip" data-placement="top" title="" data-original-title="Baseline"></span></td>';
+      var minerl_baselines_mapping = { "pfrl_rainbow": "PFRL Rainbow", "pfrl_sqil": "PFRL SQIL", "minerl_dqfd_baseline": "PFRL DQFD", "pfn_pdddqn_baseline": "PFRL PDDDQN"};
+
+      $('.leaderboard-position-gold').parent().parent().hide();
+      for (let [username, baseline_name] of Object.entries(minerl_baselines_mapping)) {
+        var selector = ".table-leaderboard span.truncate:contains('".concat(username).concat("')");
+        $($(selector).closest('tr').find('a.btn')[1]).show();
+        $($(selector).closest('tr').find('a.btn')[1]).css('float', 'left');
+        var baseline_link = $($(selector).closest('tr').find('a.btn')[1]).attr('href');
+
+        $(selector).closest('td').prev('td').prev('td').replaceWith(baseline_thumb);
+        $(selector).closest('td').prev('td').html('');
+        $(selector).closest('td').next('td').next('td').next('td').next('td').next('td').next('td').html('');
+        $(selector).closest('td').next('td').next('td').next('td').next('td').next('td').html('');
+        $(selector).closest('td').html('<div>Baseline <mark>'.concat(baseline_name).concat('</mark><i><small style="clear: both;display: block;" class="mt-2"><a style="color:#a5a5a5" href="').concat(baseline_link).concat('"><span class="fa fa-code-fork"></span>&nbsp;Fork to make your submission</a></small></i></div>'));
+      }
+      
+    }
+  }
+
+  if(window.location.pathname.startsWith("/participants/unknown")) {
+        $('#flash-messages-wrapper').prepend('<div class="col-12 alert alert-info alert-fixed p-3"><span class="fa fa-trash border p-2 rounded mr-2"></span>This account holds submission by all the deleted users</div>');
+
+  }
+
+  if ($('.member-options strong').length > 0) {
+    var allowedUsers = ["shivam", "akshatcx", "vrv"];
+    if ( allowedUsers.includes($('.member-options strong')[0].innerHTML) ) {
+      $($('ul.nav')[0]).prepend('<li class="nav-item"><a class="nav-link" href="https://classroom.aicrowd.com/">Classroom</a></li>');
+      if ( $('div.masthead-home a.btn-secondary').length > 0 ) {
+        $('div.masthead-home a.btn-secondary')[0].href = "https://classroom.aicrowd.com/";
+      }
+    }
+  }
+
+  if (window.matchMedia('(max-width: 767px)').matches) {
+     $('.md-content img').css("max-width", "100%");
+  }
+
+  $('.sub-nav-bar .btn').each(function() {
+    html = this.outerHTML;
+    html = html.replace('<button','<a').replace('</button>','</a>');
+    $(this).replaceWith(html);
+  });
+  if($('[data-controller=prioritynav]').length) {
+    $(this).delay(1000).queue(function(){nav_bar_reset()});
+  }
+});
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '332857284782766');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=332857284782766&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- /custom footer -->
+<!-- /app footer -->
+
+      <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132885496-1');
+  </script>
+
+  </body>
+</html>
